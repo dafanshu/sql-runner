@@ -1,4 +1,4 @@
-module github.com/dafanshu/sql-runner/pkg
+module github.com/dafanshu/sql-runner
 
 go 1.12
 
