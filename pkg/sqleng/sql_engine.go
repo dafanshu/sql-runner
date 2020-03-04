@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/dafanshu/simplejson"
+	"github.com/dafanshu/sql-runner/pkg"
+	"github.com/dafanshu/sql-runner/pkg/models"
 	"github.com/go-xorm/xorm"
-	"sql-runner/pkg"
-	"sql-runner/pkg/models"
 	"xorm.io/core"
 )
 

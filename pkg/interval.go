@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/dafanshu/simplejson"
-	"sql-runner/pkg/models"
+	"github.com/dafanshu/sql-runner/pkg/models"
 )
 
 var (

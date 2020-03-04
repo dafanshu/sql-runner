@@ -3,7 +3,7 @@ package pkg
 import (
 	"context"
 
-	"sql-runner/pkg/models"
+	"github.com/dafanshu/sql-runner/pkg/models"
 )
 
 type HandleRequestFunc func(ctx context.Context, dsInfo *models.DataSource, req *TsdbQuery) (*Response, error)
