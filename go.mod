@@ -1,4 +1,4 @@
-module sql-runner
+module sql-runner/pkg
 
 go 1.12
 
