@@ -9,8 +9,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/VividCortex/mysqlerr"
-
 	"github.com/dafanshu/sql-runner/pkg"
 	"github.com/dafanshu/sql-runner/pkg/models"
 	"github.com/dafanshu/sql-runner/pkg/sqleng"
