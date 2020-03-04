@@ -11,11 +11,11 @@ import (
 
 	"github.com/VividCortex/mysqlerr"
 
+	"github.com/dafanshu/sql-runner/pkg"
+	"github.com/dafanshu/sql-runner/pkg/models"
+	"github.com/dafanshu/sql-runner/pkg/sqleng"
 	"github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/core"
-	"github.com/yur/sql-runner/pkg"
-	"github.com/yur/sql-runner/pkg/models"
-	"github.com/yur/sql-runner/pkg/sqleng"
 )
 
 func init() {
@@ -117,7 +117,7 @@ func (t *mysqlQueryResultTransformer) TransformQueryResult(columnTypes []*sql.Co
 
 func (t *mysqlQueryResultTransformer) TransformQueryError(err error) error {
 	if driverErr, ok := err.(*mysql.MySQLError); ok {
-		if driverErr.Number != mysqlerr.ER_PARSE_ERROR && driverErr.Number != mysqlerr.ER_BAD_FIELD_ERROR && driverErr.Number != mysqlerr.ER_NO_SUCH_TABLE {
+		if driverErr.Number != ER_PARSE_ERROR && driverErr.Number != ER_BAD_FIELD_ERROR && driverErr.Number != ER_NO_SUCH_TABLE {
 			return errQueryFailed
 		}
 	}

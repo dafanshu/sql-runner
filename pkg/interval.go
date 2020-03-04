@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yur/sql-runner/pkg/components/simplejson"
-	"github.com/yur/sql-runner/pkg/models"
+	"github.com/dafanshu/sql-runner/pkg/components/simplejson"
+	"github.com/dafanshu/sql-runner/pkg/models"
 )
 
 var (
