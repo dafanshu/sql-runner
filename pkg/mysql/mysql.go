@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/dafanshu/sql-runner/pkg"
-	"github.com/dafanshu/sql-runner/pkg/models"
-	"github.com/dafanshu/sql-runner/pkg/sqleng"
 	"github.com/go-sql-driver/mysql"
-	"github.com/go-xorm/core"
+	"sql-runner/pkg"
+	"sql-runner/pkg/models"
+	"sql-runner/pkg/sqleng"
+	"xorm.io/core"
 )
 
 func init() {

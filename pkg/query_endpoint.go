@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dafanshu/sql-runner/pkg/models"
+	"sql-runner/pkg/models"
 )
 
 type TsdbQueryEndpoint interface {

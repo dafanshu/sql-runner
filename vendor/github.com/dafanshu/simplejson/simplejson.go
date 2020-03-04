@@ -58,6 +58,14 @@ func NewFromAny(data interface{}) *Json {
 	return &Json{data: data}
 }
 
+func (j *Json) Keys() []string {
+	var keys []string
+	for key := range (j.data).(map[string]interface{}) {
+		keys = append(keys, key)
+	}
+	return keys
+}
+
 // Interface returns the underlying data
 func (j *Json) Interface() interface{} {
 	return j.data

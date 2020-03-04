@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/dafanshu/sql-runner/pkg/components/simplejson"
+	"github.com/dafanshu/simplejson"
 )
 
 const (

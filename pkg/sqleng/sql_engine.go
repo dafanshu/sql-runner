@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dafanshu/sql-runner/pkg"
-	"github.com/dafanshu/sql-runner/pkg/components/simplejson"
-	"github.com/dafanshu/sql-runner/pkg/models"
-	"github.com/go-xorm/core"
+	"github.com/dafanshu/simplejson"
 	"github.com/go-xorm/xorm"
+	"sql-runner/pkg"
+	"sql-runner/pkg/models"
+	"xorm.io/core"
 )
 
 // SqlQueryResultTransformer transforms a query result row to RowValues with proper types.

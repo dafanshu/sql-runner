@@ -1,9 +1,9 @@
 package pkg
 
 import (
-	"github.com/dafanshu/sql-runner/pkg/components/null"
-	"github.com/dafanshu/sql-runner/pkg/components/simplejson"
-	"github.com/dafanshu/sql-runner/pkg/models"
+	"github.com/dafanshu/simplejson"
+	"sql-runner/pkg/components/null"
+	"sql-runner/pkg/models"
 )
 
 type TsdbQuery struct {
